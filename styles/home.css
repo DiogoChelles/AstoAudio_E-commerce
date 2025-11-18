@@ -1,0 +1,109 @@
+.cabecalho {
+  background-image: url(../assets/imgs/1511950677.5332.157249\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 115vh;
+  color: #fff;
+}
+
+.secao-banner {
+  text-align: center;
+  padding: 250px 0;
+}
+
+.secao-banner h1 {
+  font-size: 7.8rem;
+  font-weight: 300;
+}
+
+.destaque-go {
+  color: #9bebe3;
+}
+
+.secao-banner h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 100px;
+  color: #888888;
+}
+
+.botao-shopnow {
+  background-color: #9bebe3;
+  color: #0a2239;
+  padding: 12px 3%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border: 3px solid #9bebe3;
+  transition: 0.3s;
+}
+
+.botao-shopnow:hover {
+  background-color: transparent;
+  color: #9bebe3;
+}
+
+.secao-emalta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  height: 100vh;
+  background-color: #000;
+}
+
+.secao-emalta h1 {
+color: #fff;
+
+}
+
+.cartao-produto {
+  width: 345px;
+  height: 433px;
+  perspective: 1500px;
+}
+
+.cartao-conteudo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cartao-produto:hover .cartao-conteudo {
+  transform: rotateY(180deg) scale(1.1);
+}
+
+.frente-emalta {
+  color: #fff;
+}
+
+.frente-emalta, .verso-emalta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #181818;
+  backface-visibility: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+
+.frente-emalta img {
+  width: 100%;
+  height: auto;
+}
+
+/* É importante que a "class" abaixo seja escrita logo após ".cartao-produto:hover .cartao-conteudo" para que o cartão possa ser visto no live server. No entanto, é importante terminar a parte "frente-cartao" antes, por questões de organização. Portanto, terminar o código entre as duas ".class" citadas. */
+.verso-emalta {
+  background-color: #2b858b;
+  color: #fff;
+  transform:rotateY(180deg)
+}
+
+.cartao-meio {
+  margin: 0 40px;
+}

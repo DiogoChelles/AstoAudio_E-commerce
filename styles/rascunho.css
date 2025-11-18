@@ -1,0 +1,59 @@
+.secao-emalta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  height: 100vh;
+  background-color: #000;
+}
+
+.cartao-produto {
+  width: 300px;
+  height: 360px;
+  perspective: 1500px;
+}
+
+.cartao-conteudo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cartao-produto:hover .cartao-conteudo {
+  transform: rotateY(180deg) scale(1.1);
+}
+
+.frente-emalta {
+  color: #fff;
+}
+
+.frente-emalta, .verso-emalta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: #181818;
+  backface-visibility: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 1.5rem;
+}
+
+.frente-emalta img {
+  width: 100%;
+  height: auto;
+}
+
+/* É importante a tag-class abaixo seja escrita logo após ".cartao-produto:hover .cartao-conteudo" para que o cartão seja visto no live server */
+.verso-emalta {
+  background-color: #2b858b;
+  color: #fff;
+  transform:rotateY(180deg)
+}
+
+.cartao-meio {
+  margin: 0 40px;
+}
+
